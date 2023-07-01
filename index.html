@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">    
+    <title>Document</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="warning" style="display:none;">This website is only for desktop.</div>
+    <header>
+        <nav class="header-content">
+            <img src="images/logo.png" alt="benz-logo" class="logo">
+            <a href="#" id="test-speed" class="glow-on-hover" onClick="showVideo();"> Speed test </a> 
+        </nav> 
+    </header>
+    <main>
+        <section class="content">
+            <h2>C - CLASS</h2>
+            <h1>MERCEDES - BENZ</h1>
+            <P>How fast does a Mercedes-Benz C-Class go?
+                C - class speed test. 
+                The C 300 could reach an estimated 130 mile per hour 
+                maximum speed.  This top speed is present for both the 
+                2022 C 300 4MATIC® and the C 300 Sedan trim levels
+                Equipped with 4Matic AWD, the 2022 Mercedes C300 test car 
+                reached 60 mph in 5.5 seconds, thanks to its 255-hp turbo 
+                inline-four and nine-speed automatic transmission.
+            </P>
+            <div>
+                <h3>Choose your color</h3>
+                <div class="color-select">
+                    <div id="black" onClick="action('images/benz-black.png');"></div>
+                    <div id="blue" onClick="action('images/benz-blue.png');"></div>
+                    <div id="red" onClick="action('images/benz-red.png');"></div>
+                    <div id="white" onClick="action('images/benz-white.png');" ></div>
+                </div>
+            </div>
+            <div class="align-image"> 
+                <img id="image" src="images/benz-blue.png">
+            </div>  
+            <aside class="model">
+                <div class="container">
+                    <video id="myVideo" controls="250">
+                        <source src="video/benz-video.mp4" type="video/mp4">
+                </div>
+            </aside>
+        </section>    
+    </main>
+</body>
+</html>
